@@ -1,0 +1,62 @@
+{% extends 'app/base.html' %}
+
+
+{% load static %}
+{% block contenido %}
+<body>
+        <h2 class="jumbotron">
+            Discusiones Activas: {{count}}
+            
+        
+            <a href="{% url 'addInForum'  %}" class="btn btn-primary"> Agregar</a>
+            
+        </h2>
+            <div class="card-columns" style="padding: 10px; margin: 20px;"></div>
+
+
+            {% for forum in forums %}
+
+                <div class="card box container">
+                    <br>
+                    <h5 class="card-title">
+                        <a href='{{forum.link}}'><h3>{{forum.tema}}</h3></a> 
+                        <div class="card-body container">
+                                <p>{{forum.descripcion}}</p>
+                            </h5>
+                            <hr>
+                            <p> De: {{forum.user.first_name}}</p>
+                            email- {{forum.user.email}}
+                            <hr>     
+                            <h4>Respuestas:</h4>
+                            {% for discuss in discussions %}
+                            {% for objs in discuss %}  
+                            {% if objs.forum == forum %}
+                                {% if objs.user.groups.all.0.name == "Cliente" %}
+                                {{objs.discuss}} -- Respuesta del usuario: {{objs.user}}
+                                {% endif %}
+                                {% if objs.user.groups.all.0.name == "Administrador" %}
+                                {{objs.discuss}} -- Respuesta del administrador: {{objs.user}}
+                                {% endif %}
+                               <br>
+                               <hr>
+                            {% endif %}
+                            {% endfor %}
+                            {% endfor %}
+                           
+                            
+                            <a href="{% url 'addInDiscussion' forum.id %}" class="btn btn-primary">Agregar Respuesta</a>            
+                        </div>
+                </div>
+            </div>
+            {%endfor%}
+
+            <br>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
+{% endblock %} 
