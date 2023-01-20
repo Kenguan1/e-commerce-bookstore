@@ -7,8 +7,8 @@ user POV:
 Pay Section
 ![image](https://user-images.githubusercontent.com/49210338/213639065-2d9a1eab-da0b-416b-95d7-c3daba0aa603.png)
 ![image](https://user-images.githubusercontent.com/49210338/213639199-de29b424-990b-433e-b180-85cef14b8e3f.png)
-![image](https://user-images.githubusercontent.com/49210338/213640162-af5cf266-0516-43da-81fa-aae69777cf9e.png)
 ![image](https://user-images.githubusercontent.com/49210338/213640027-afb9a58c-e069-42db-9fd5-c563e9baa9c3.png)
+![image](https://user-images.githubusercontent.com/49210338/213640162-af5cf266-0516-43da-81fa-aae69777cf9e.png)
 ![image](https://user-images.githubusercontent.com/49210338/213640207-320daff8-6249-44d1-8911-b8c4101ad021.png)
 ![image](https://user-images.githubusercontent.com/49210338/213640377-19508cdb-1631-4a96-9fb6-0e3495733cf3.png)
 
