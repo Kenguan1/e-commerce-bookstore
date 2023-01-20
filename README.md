@@ -1,6 +1,7 @@
 # e-commerce-bookstore
-project for the subject "Software Lab", we made use of HMTL, CSS, Bootstrap 5, Django &amp; Python
-user POV: 
+Project for the subject "Software Lab", we made use of HMTL, CSS, Bootstrap 5, Django & Python.
+
+User POV: 
 ![image](https://user-images.githubusercontent.com/49210338/213640269-a5883b43-f84a-4b77-9f2f-832b236cb8b4.png)
 ![image](https://user-images.githubusercontent.com/49210338/213639721-143115ae-78e2-4e6d-83e6-9f441a37433f.png)
 
