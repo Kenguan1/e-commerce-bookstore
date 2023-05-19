@@ -1,6 +1,6 @@
 # e-commerce-bookstore
 Project for the subject "Software Lab", we made use of HMTL, CSS, Bootstrap 5, Django & Python.
-collab w/ Santiago Hincapié & Sebastián Aldana
+collab w/ Santiago Hincapié
 
 User POV: 
 ![image](https://user-images.githubusercontent.com/49210338/213640269-a5883b43-f84a-4b77-9f2f-832b236cb8b4.png)
